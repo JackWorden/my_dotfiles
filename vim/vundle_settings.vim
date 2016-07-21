@@ -16,6 +16,11 @@ Plugin 'vim-ruby/vim-ruby'
 " For deleting
 Plugin 'GregKWhite/vim-delete'
 
+" Silver Searcher
+Plugin 'rking/ag.vim'
+
+" Ctrl-P
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 
