@@ -22,6 +22,10 @@ Plugin 'rking/ag.vim'
 " Ctrl-P
 Plugin 'ctrlpvim/ctrlp.vim'
 
+" Vim && Tmux
+Plugin 'christoomey/vim-tmux-navigator'
+
+
 call vundle#end()
 
 filetype plugin indent on  
