@@ -25,6 +25,12 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " Vim && Tmux
 Plugin 'christoomey/vim-tmux-navigator'
 
+" Vim Markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+" Vim Surround
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 

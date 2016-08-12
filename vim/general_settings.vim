@@ -1,3 +1,8 @@
+" Fish doesn't use POSIX operations, so set the shell to something else.
+if &shell =~# 'bin/fish$'
+    set shell=/bin/sh
+endif
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -18,6 +23,12 @@ set relativenumber             " Show relative line numbers
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+
+" No wrapping
+set nowrap
+
+" Add ruler
+autocmd FileType ruby,eruby,yaml setlocal colorcolumn=80
 
 " Color scheme
 let g:hybrid_custom_term_colors = 1
