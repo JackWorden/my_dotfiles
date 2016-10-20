@@ -13,6 +13,10 @@ set backspace=indent,eol,start
 " Switch syntax highlighting on
 syntax on
 
+" Make searching bearable
+set ignorecase
+set smartcase
+
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
@@ -28,14 +32,11 @@ set softtabstop=2
 set nowrap
 
 " Add ruler
-autocmd FileType ruby,eruby,yaml setlocal colorcolumn=80
+autocmd FileType ruby,eruby,yaml setlocal colorcolumn=100
 
 " Color scheme
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
-set background=dark
-colorscheme hybrid
-
+colorscheme jellybeans
+set t_Co=256
 
 " Silver Searcher
 if executable('ag')
@@ -48,3 +49,6 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
+"Pathogen
+execute pathogen#infect()

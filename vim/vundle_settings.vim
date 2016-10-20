@@ -8,7 +8,13 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-" Plugins
+" Plugins 
+
+" Vim Snippets
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Bundle "honza/vim-snippets"
 
 " Additional Ruby support for Vim
 Plugin 'vim-ruby/vim-ruby'
@@ -31,6 +37,22 @@ Plugin 'plasticboy/vim-markdown'
 
 " Vim Surround
 Plugin 'tpope/vim-surround'
+
+" Vim Rspec
+Plugin 'thoughtbot/vim-rspec'
+
+" Vim Dispatch
+Plugin 'tpope/vim-dispatch'
+
+" Vim Emmet
+Plugin 'mattn/emmet-vim'
+
+" NerdTree
+Plugin 'scrooloose/nerdtree'
+
+" Text objects
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 
 call vundle#end()
 
