@@ -17,6 +17,9 @@ nnoremap \ :Ag!<SPACE>
 map <Leader>y "*y<CR>
 map <Leader>p "*p<CR>
 
+" Return to previous spot
+map <Leader><CR> ``
+
 " Vim RSpec
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>

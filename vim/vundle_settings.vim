@@ -54,6 +54,13 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 
+" Elixir
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'slashmili/alchemist.vim'
+
+" Rust
+Plugin 'rust-lang/rust.vim'
+
 call vundle#end()
 
 filetype plugin indent on  
