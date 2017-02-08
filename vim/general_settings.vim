@@ -52,3 +52,6 @@ endif
 
 "Pathogen
 execute pathogen#infect()
+
+" .es6 to JS
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
